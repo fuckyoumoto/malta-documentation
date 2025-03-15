@@ -1,0 +1,36 @@
+---
+title: Fastboot
+---
+
+import MenuSelectImg from "@site/static/assets/modes/menu_select.jpg";
+
+<img src={MenuSelectImg} width="300" />
+
+## Boot to Fastboot mode
+There are many ways to boot into Fastboot mode, you can use one of the last complicated ways if for some reason you can't boot into Fastboot.
+
+### Using ADB command
+- Enable USB debugging
+- Connect the phone to PC, run ```adb devices``` command and confirm USB debugging if you have not connected the phone to the current PC via adb before
+- Run the command via adb to reboot into fastboot
+  ```sh
+  adb reboot bootloader
+    ```
+
+### Using buttons
+- Power off phone
+- Press **VOL+ & Power** and select “Fastboot” in the menu.
+
+### Using Serial Command in Preloader Mode
+- Power off phone
+- Install MTK driver _(If you have Windows)_ - [See tools](../dev/tools.md)
+- Clone [fuckyoumoto-utils repository](https://github.com/fuckyoumoto/fuckyoumoto-utils)
+- Install dependencies
+  ```shell
+  pip install -r requirements.txt
+    ```
+- Run ``mtkbootcmd.py`` script
+  ```shell
+  python mtkbootcmd.py FASTBOOT
+  ```
+- Connect the phone to PC (It should be detected as Preloader)

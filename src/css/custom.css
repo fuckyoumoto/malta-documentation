@@ -1,0 +1,53 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #c9383d;
+  --ifm-color-primary-dark: #b63136;
+  --ifm-color-primary-darker: #ac2f33;
+  --ifm-color-primary-darkest: #8e262a;
+  --ifm-color-primary-light: #ce4c51;
+  --ifm-color-primary-lighter: #d1565b;
+  --ifm-color-primary-lightest: #d97578; 
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --ifm-color-primary: #f07d80;
+  --ifm-color-primary-dark: #ec5c60;
+  --ifm-color-primary-darker: #ea4c50;
+  --ifm-color-primary-darkest: #e51b20;
+  --ifm-color-primary-light: #f49ea0;
+  --ifm-color-primary-lighter: #f6aeb0;
+  --ifm-color-primary-lightest: #fbdfe0;
+}
+
+strong {
+  color: #c9383d;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #242526;
+}
+
+.custom-details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.custom-details pre {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.custom-details {
+  padding-left: 24px;
+}
+.custom-details .content {
+  padding-left: 24px;
+}
